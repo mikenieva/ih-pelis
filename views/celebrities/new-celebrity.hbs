@@ -1,0 +1,22 @@
+
+<h1>Crear celebridad</h1>
+
+<form action="/celebrities/create" method="POST">
+	<label>Nombre</label>
+	<input name="name" type="text" />
+
+	<label>Ocupación</label>
+	<input name="occupation" type="text" />
+
+	<label>Frase célebre</label>
+	<input name="catchPhrase" type="text" />
+
+	<button type="submit">Crear celebridad</button>
+
+	{{#if errorMsg}}
+		<p>{{errorMsg}}</p>
+	{{/if}}	
+
+</form>
+
+
