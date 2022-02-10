@@ -1,3 +1,13 @@
 {{!-- ./views/movies/movies.hbs --}}
 <h1>Listado de películas</h1>
 
+{{#each movies}}
+
+	<h2>{{title}}</h2>
+
+	{{#each cast}}
+		{{name}}
+	{{/each}}
+	
+
+{{/each}}

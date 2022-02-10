@@ -1,6 +1,6 @@
-// 
-
 const mongoose =		require("mongoose")
+
+
 
 const movieSchema	= mongoose.Schema({
 
@@ -16,7 +16,7 @@ const movieSchema	= mongoose.Schema({
 	},
 	cast: [
 		{
-			type: Schema.Types.ObjectID, 
+			type: mongoose.Schema.Types.ObjectID, 
 			ref: "Celebrity"
 		}
 	]
